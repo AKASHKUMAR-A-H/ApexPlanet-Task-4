@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Akash Kumar</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <a href="#todo">To-Do List</a>
+      <a href="#products">Product Listing</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I'm a passionate software developer with skills in Java, UI/UX, and Web Development.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>Drone Automation System</li>
+      <li>Full Stack Internship at Firstmelon</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: akash@example.com</p>
+  </section>
+
+  <section id="todo">
+    <h2>To-Do List</h2>
+    <div class="todo-container">
+      <input type="text" id="todo-input" placeholder="Add a new task..." />
+      <button id="add-todo">Add</button>
+      <ul id="todo-list"></ul>
+      <div id="todo-empty" style="display:none; color:#888; text-align:center;">No tasks yet!</div>
+    </div>
+  </section>
+
+  <section id="products">
+    <h2>Product Listing</h2>
+    <div class="product-controls">
+      <label for="category-filter">Category:</label>
+      <select id="category-filter">
+        <option value="all">All</option>
+        <option value="electronics">Electronics</option>
+        <option value="books">Books</option>
+        <option value="clothing">Clothing</option>
+      </select>
+      <label for="sort-by">Sort by:</label>
+      <select id="sort-by">
+        <option value="price-asc">Price: Low to High</option>
+        <option value="price-desc">Price: High to Low</option>
+        <option value="rating-desc">Rating: High to Low</option>
+      </select>
+    </div>
+    <div id="product-list"></div>
+    <div id="product-empty" style="display:none; color:#888; text-align:center;">No products found.</div>
+  </section>
+
+  <footer>
+    <p>© 2025 Akash Kumar</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
